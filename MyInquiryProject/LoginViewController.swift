@@ -29,7 +29,8 @@ class LoginViewController: UIViewController {
         
         bindingUI()
     }
-
+    
+    // MARK: - Private func
     private func bindingUI() {
         txtUsername.rx.text
             .throttle(0.3, scheduler: MainScheduler.instance)
@@ -62,7 +63,7 @@ class LoginViewController: UIViewController {
         signUpButton.rx.tap
             .asObservable()
             .bindNext { [weak self] in
-                self?.viewModel.signUp()
+                self?.signUpButtonDidTapped()
             }.addDisposableTo(self.dispose)
         
         forgotPasswordButton.rx.tap
@@ -102,13 +103,25 @@ class LoginViewController: UIViewController {
             }.addDisposableTo(self.dispose)
     }
     
-    // MARK: - Private func
     private func presentDialog(withContent content: String) {
         let alert = UIAlertController(title: content, message: nil, preferredStyle: UIAlertControllerStyle.alert)
         alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.cancel, handler: nil))
         self.present(alert, animated: true, completion: nil)
     }
+    
+    private func signUpButtonDidTapped() {
+        guard let signUpViewController = SignUpViewController.create() else { return }
+        signUpViewController.delegate = self
+        self.present(signUpViewController, animated: true, completion: nil)
+    }
+}
 
-
+extension LoginViewController: SignUpDelegate {
+    func signUpViewDidRegisterSuccessful(signUpView: SignUpViewController) {
+        self.txtUsername.text = signUpView.viewModel.username
+        self.txtUsername.sendActions(for: UIControlEvents.valueChanged)
+        self.txtPassword.text = signUpView.viewModel.password
+        self.txtPassword.sendActions(for: UIControlEvents.valueChanged)
+    }
 }
 

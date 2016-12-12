@@ -19,6 +19,7 @@ class LoginViewModel: NSObject {
     var contentDialog = ""
     var presentViewController = Variable<UIViewController?>(nil)
     var isShowIndicator = Variable<Bool>(false)
+    var isPresentSignUpView = Variable<Bool>(false)
     
     override init() {
         super.init()
@@ -55,13 +56,8 @@ class LoginViewModel: NSObject {
         }
     }
     
-    func signUp() {
-        let signUpViewController = SignUpViewController.create()
-        presentViewController.value = signUpViewController
-    }
-    
     func forgotPassword() {
-    
+        //TODO : Implement action when user tap forgot password button
     }
     
 }

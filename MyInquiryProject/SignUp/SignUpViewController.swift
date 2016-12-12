@@ -12,10 +12,16 @@ import RxSwift
 
 let storyboardIdentifier = "SignUpViewController"
 
+protocol SignUpDelegate {
+    func signUpViewDidRegisterSuccessful(signUpView: SignUpViewController)
+}
+
 class SignUpViewController: UIViewController {
     
     let viewModel = SignUpViewModel()
     let dispose = DisposeBag()
+    
+    var delegate: SignUpDelegate?
     
     @IBOutlet weak var usernameTextField: UITextField!
     @IBOutlet weak var phoneNumberTextField: UITextField!
@@ -23,6 +29,7 @@ class SignUpViewController: UIViewController {
     @IBOutlet weak var retypePasswordTextField: UITextField!
     @IBOutlet weak var registerButton: UIButton!
     @IBOutlet weak var indicator: UIActivityIndicatorView!
+    @IBOutlet weak var backButton: UIButton!
     
     class func create() -> SignUpViewController? {
         guard let viewController = UIStoryboard.init(name: storyboardIdentifier, bundle: nil).instantiateInitialViewController() as? SignUpViewController else { return nil }
@@ -77,11 +84,15 @@ class SignUpViewController: UIViewController {
                     self?.viewModel.retypePassword = ""
                 }
             }.addDisposableTo(self.dispose)
-        
         registerButton.rx.tap
             .asObservable()
             .bindNext{ [weak self] in
                 self?.viewModel.register()
+            }.addDisposableTo(self.dispose)
+        backButton.rx.tap
+            .asObservable()
+            .bindNext{ [weak self] in
+                self?.dismiss(animated: true, completion: nil)
             }.addDisposableTo(self.dispose)
         
         //ViewModel
@@ -117,7 +128,9 @@ class SignUpViewController: UIViewController {
     
     func registerSuccessfulAction() {
         self.presentDialog(titleContent: "Register Successful !", submitAction: { [weak self] _ in
-            self?.dismiss(animated: true, completion: nil)
+            guard let selfInstance = self else { return }
+            selfInstance.delegate?.signUpViewDidRegisterSuccessful(signUpView: selfInstance)
+            selfInstance.dismiss(animated: true, completion: nil)
         })
     }
 
