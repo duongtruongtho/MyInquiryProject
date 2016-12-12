@@ -51,8 +51,8 @@ class LoginViewModel: NSObject {
                 return
             }
             
-            selfInstance.contentDialog = "Login Sucess !"
-            selfInstance.isShowDialog.value = true
+            guard let mainViewController = MainViewController.create() else { return }
+            selfInstance.presentViewController.value = mainViewController
         }
     }
     

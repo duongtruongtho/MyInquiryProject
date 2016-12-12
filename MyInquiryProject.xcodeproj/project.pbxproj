@@ -18,6 +18,8 @@
 		649E07A41DFD3E7B00A29345 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 649E07A31DFD3E7B00A29345 /* Assets.xcassets */; };
 		649E07A71DFD3E7B00A29345 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 649E07A51DFD3E7B00A29345 /* LaunchScreen.storyboard */; };
 		649E07AF1DFD3F5E00A29345 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 649E07AE1DFD3F5E00A29345 /* GoogleService-Info.plist */; };
+		7AC2B94F1DFE5D9B00C27BF6 /* MainViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AC2B94E1DFE5D9B00C27BF6 /* MainViewController.storyboard */; };
+		7AC2B9531DFE761500C27BF6 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC2B9521DFE761500C27BF6 /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +37,8 @@
 		649E07A61DFD3E7B00A29345 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		649E07A81DFD3E7B00A29345 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		649E07AE1DFD3F5E00A29345 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		7AC2B94E1DFE5D9B00C27BF6 /* MainViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = MainViewController.storyboard; path = MainView/MainViewController.storyboard; sourceTree = "<group>"; };
+		7AC2B9521DFE761500C27BF6 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainViewController.swift; path = MainView/MainViewController.swift; sourceTree = "<group>"; };
 		A7CA1F1856E8DF769E7EFC33 /* Pods-MyInquiryProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyInquiryProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyInquiryProject/Pods-MyInquiryProject.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -131,6 +135,7 @@
 		649E079B1DFD3E7B00A29345 /* MyInquiryProject */ = {
 			isa = PBXGroup;
 			children = (
+				7AC2B94D1DFE5AC100C27BF6 /* MainView */,
 				647017D11DFD939B0004FCE7 /* SignUp */,
 				647017CC1DFD70AC0004FCE7 /* Login */,
 				649E079C1DFD3E7B00A29345 /* AppDelegate.swift */,
@@ -140,6 +145,15 @@
 				649E07AE1DFD3F5E00A29345 /* GoogleService-Info.plist */,
 			);
 			path = MyInquiryProject;
+			sourceTree = "<group>";
+		};
+		7AC2B94D1DFE5AC100C27BF6 /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+				7AC2B94E1DFE5D9B00C27BF6 /* MainViewController.storyboard */,
+				7AC2B9521DFE761500C27BF6 /* MainViewController.swift */,
+			);
+			name = MainView;
 			sourceTree = "<group>";
 		};
 		DE18B55338739AC0492CC2D6 /* Pods */ = {
@@ -217,6 +231,7 @@
 				649E07AF1DFD3F5E00A29345 /* GoogleService-Info.plist in Resources */,
 				649E07A41DFD3E7B00A29345 /* Assets.xcassets in Resources */,
 				649E07A21DFD3E7B00A29345 /* LoginViewController.storyboard in Resources */,
+				7AC2B94F1DFE5D9B00C27BF6 /* MainViewController.storyboard in Resources */,
 				647017D51DFD93DD0004FCE7 /* SignUpViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -279,6 +294,7 @@
 				649E079F1DFD3E7B00A29345 /* LoginViewController.swift in Sources */,
 				649E079D1DFD3E7B00A29345 /* AppDelegate.swift in Sources */,
 				647017D91DFD99470004FCE7 /* SignUpViewModel.swift in Sources */,
+				7AC2B9531DFE761500C27BF6 /* MainViewController.swift in Sources */,
 				647017D71DFD992C0004FCE7 /* SignUpViewController.swift in Sources */,
 				647017D01DFD71410004FCE7 /* LoginViewModel.swift in Sources */,
 			);

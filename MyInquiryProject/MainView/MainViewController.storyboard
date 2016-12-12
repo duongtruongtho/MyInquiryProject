@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="FfT-k6-lKt">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Favorite-->
+        <scene sceneID="Mdu-tw-uwo">
+            <objects>
+                <viewController id="CyK-OP-00K" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="BKb-XB-P7L"/>
+                        <viewControllerLayoutGuide type="bottom" id="9i7-lX-QBx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0ZO-aS-voO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Favorite" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ckP-Nf-feq">
+                                <rect key="frame" x="124" y="64" width="126" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Favorite" image="ic_favorite" id="Hxh-LR-lLX"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Acz-wf-FGa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="108" y="-589"/>
+        </scene>
+        <!--Add Inquiry-->
+        <scene sceneID="Bme-cE-Yjd">
+            <objects>
+                <viewController id="FjU-sh-tqK" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="JPS-nV-PNv"/>
+                        <viewControllerLayoutGuide type="bottom" id="sX5-qf-flB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ClE-C9-uQ9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Create Inquiry View" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Msg-8J-DTu">
+                                <rect key="frame" x="107" y="87" width="161" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Add Inquiry" image="ic_note_add" id="f7i-nk-GrC"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ach-GT-IC0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="108" y="418"/>
+        </scene>
+        <!--My Contact-->
+        <scene sceneID="vq4-kz-8Qa">
+            <objects>
+                <viewController id="tzb-b5-Cie" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2r9-yY-gKO"/>
+                        <viewControllerLayoutGuide type="bottom" id="arw-kc-GLa"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Lgo-Vq-iLh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="My Contact View" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lWV-NU-XbS">
+                                <rect key="frame" x="118" y="89" width="139" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="My Contact" image="ic_account_circle" id="zlT-Zd-gyP"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PXe-Lf-AvG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="854" y="418"/>
+        </scene>
+        <!--New Feed-->
+        <scene sceneID="Ohh-wN-3JY">
+            <objects>
+                <viewController id="WUz-DE-Ugd" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pjH-hy-rGg"/>
+                        <viewControllerLayoutGuide type="bottom" id="JjM-gV-pJu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="o3d-Zb-NsE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="New Feed View" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oIw-X3-5Is">
+                                <rect key="frame" x="124" y="80" width="126" height="19"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="New Feed" image="ic_receipt" id="cNm-PP-IFj"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xyu-31-EZR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="853.60000000000002" y="-589.65517241379314"/>
+        </scene>
+        <!--Main View Controller-->
+        <scene sceneID="c0N-T8-5Gr">
+            <objects>
+                <tabBarController id="FfT-k6-lKt" customClass="MainViewController" customModule="MyInquiryProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="SoG-8H-kXK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="WUz-DE-Ugd" kind="relationship" relationship="viewControllers" id="sol-dV-hcP"/>
+                        <segue destination="CyK-OP-00K" kind="relationship" relationship="viewControllers" id="SBD-n8-STe"/>
+                        <segue destination="FjU-sh-tqK" kind="relationship" relationship="viewControllers" id="hPd-BM-UO2"/>
+                        <segue destination="tzb-b5-Cie" kind="relationship" relationship="viewControllers" id="CBm-zg-Go6"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kKE-DP-9fe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-798" y="-151"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic_account_circle" width="24" height="24"/>
+        <image name="ic_favorite" width="24" height="24"/>
+        <image name="ic_note_add" width="24" height="24"/>
+        <image name="ic_receipt" width="24" height="24"/>
+    </resources>
+</document>
