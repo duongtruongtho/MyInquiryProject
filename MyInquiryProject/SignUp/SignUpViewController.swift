@@ -23,6 +23,7 @@ class SignUpViewController: UIViewController {
     
     var delegate: SignUpDelegate?
     
+    @IBOutlet weak var fullNameTextField: UITextField!
     @IBOutlet weak var usernameTextField: UITextField!
     @IBOutlet weak var phoneNumberTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
@@ -44,6 +45,16 @@ class SignUpViewController: UIViewController {
 
     // MARK: - Private func
     private func bindingUI() {
+        fullNameTextField.rx.text
+            .throttle(0.3, scheduler: MainScheduler.instance)
+            .asObservable()
+            .bindNext{ [weak self] (text: String?) in
+                if let text = text {
+                    self?.viewModel.fullName = text
+                } else {
+                    self?.viewModel.fullName = ""
+                }
+            }.addDisposableTo(self.dispose)
         usernameTextField.rx.text
             .throttle(0.3, scheduler: MainScheduler.instance)
             .asObservable()

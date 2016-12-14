@@ -10,9 +10,11 @@ import UIKit
 import RxCocoa
 import RxSwift
 import FirebaseAuth
+import Firebase
 
 class SignUpViewModel: NSObject {
     
+    var fullName = ""
     var username = ""
     var phoneNumber = ""
     var password = ""
@@ -23,13 +25,17 @@ class SignUpViewModel: NSObject {
     var isShowIndicator = Variable<Bool>(false)
     var dialogContent = ""
     
+    var ref: FIRDatabaseReference!
+    
     override init() {
         super.init()
+        ref = FIRDatabase.database().reference()
     }
     
     // MARK: - Public func
     func register() {
-        if username.isEmpty
+        if fullName.isEmpty
+        || username.isEmpty
         || phoneNumber.isEmpty
         || password.isEmpty
         || retypePassword.isEmpty {
