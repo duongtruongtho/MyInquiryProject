@@ -18,6 +18,8 @@
 		649E07A41DFD3E7B00A29345 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 649E07A31DFD3E7B00A29345 /* Assets.xcassets */; };
 		649E07A71DFD3E7B00A29345 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 649E07A51DFD3E7B00A29345 /* LaunchScreen.storyboard */; };
 		649E07AF1DFD3F5E00A29345 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 649E07AE1DFD3F5E00A29345 /* GoogleService-Info.plist */; };
+		7A86F4F21E03834B00E74943 /* GMINUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A86F4F11E03834B00E74943 /* GMINUtil.swift */; };
+		7A86F4F41E03900E00E74943 /* FirebaseDatabaseUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A86F4F31E03900E00E74943 /* FirebaseDatabaseUtil.swift */; };
 		7AC2B94F1DFE5D9B00C27BF6 /* MainViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AC2B94E1DFE5D9B00C27BF6 /* MainViewController.storyboard */; };
 		7AC2B9531DFE761500C27BF6 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC2B9521DFE761500C27BF6 /* MainViewController.swift */; };
 /* End PBXBuildFile section */
@@ -37,6 +39,8 @@
 		649E07A61DFD3E7B00A29345 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		649E07A81DFD3E7B00A29345 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		649E07AE1DFD3F5E00A29345 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		7A86F4F11E03834B00E74943 /* GMINUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GMINUtil.swift; path = Util/GMINUtil.swift; sourceTree = "<group>"; };
+		7A86F4F31E03900E00E74943 /* FirebaseDatabaseUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FirebaseDatabaseUtil.swift; path = Util/FirebaseDatabaseUtil.swift; sourceTree = "<group>"; };
 		7AC2B94E1DFE5D9B00C27BF6 /* MainViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = MainViewController.storyboard; path = MainView/MainViewController.storyboard; sourceTree = "<group>"; };
 		7AC2B9521DFE761500C27BF6 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainViewController.swift; path = MainView/MainViewController.swift; sourceTree = "<group>"; };
 		A7CA1F1856E8DF769E7EFC33 /* Pods-MyInquiryProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyInquiryProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyInquiryProject/Pods-MyInquiryProject.debug.xcconfig"; sourceTree = "<group>"; };
@@ -135,6 +139,7 @@
 		649E079B1DFD3E7B00A29345 /* MyInquiryProject */ = {
 			isa = PBXGroup;
 			children = (
+				7A86F4F01E0382FB00E74943 /* Util */,
 				7AC2B94D1DFE5AC100C27BF6 /* MainView */,
 				647017D11DFD939B0004FCE7 /* SignUp */,
 				647017CC1DFD70AC0004FCE7 /* Login */,
@@ -145,6 +150,15 @@
 				649E07AE1DFD3F5E00A29345 /* GoogleService-Info.plist */,
 			);
 			path = MyInquiryProject;
+			sourceTree = "<group>";
+		};
+		7A86F4F01E0382FB00E74943 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				7A86F4F11E03834B00E74943 /* GMINUtil.swift */,
+				7A86F4F31E03900E00E74943 /* FirebaseDatabaseUtil.swift */,
+			);
+			name = Util;
 			sourceTree = "<group>";
 		};
 		7AC2B94D1DFE5AC100C27BF6 /* MainView */ = {
@@ -292,6 +306,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				649E079F1DFD3E7B00A29345 /* LoginViewController.swift in Sources */,
+				7A86F4F41E03900E00E74943 /* FirebaseDatabaseUtil.swift in Sources */,
+				7A86F4F21E03834B00E74943 /* GMINUtil.swift in Sources */,
 				649E079D1DFD3E7B00A29345 /* AppDelegate.swift in Sources */,
 				647017D91DFD99470004FCE7 /* SignUpViewModel.swift in Sources */,
 				7AC2B9531DFE761500C27BF6 /* MainViewController.swift in Sources */,
