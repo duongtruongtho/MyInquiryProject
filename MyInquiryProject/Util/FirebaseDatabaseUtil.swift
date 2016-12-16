@@ -14,7 +14,7 @@ class FirebaseDatabaseUtil: NSObject {
     
     class func getListUserMode(withCompleteHandler completeHandler: @escaping ((Array<[String : AnyObject]>?) -> Void)) {
         let ref = FIRDatabase.database().reference()
-        ref.child("user_mode").observe(FIRDataEventType.value, with: {(snapshot: FIRDataSnapshot) in
+        ref.child("user_mode").observeSingleEvent(of: FIRDataEventType.value, with: {(snapshot: FIRDataSnapshot) in
             guard let snapshots = snapshot.children.allObjects as? [FIRDataSnapshot] else {
                 completeHandler(nil)
                 return
@@ -27,7 +27,7 @@ class FirebaseDatabaseUtil: NSObject {
     
     class func getListKeyword(withCompleteHandler completeHandler: @escaping ((Array<[String : AnyObject]>?) -> Void)) {
         let ref = FIRDatabase.database().reference()
-        ref.child("keyword").observe(FIRDataEventType.value, with: { (snapshot: FIRDataSnapshot) in
+        ref.child("keyword").observeSingleEvent(of: FIRDataEventType.value, with: { (snapshot: FIRDataSnapshot) in
             guard let snapshots = snapshot.children.allObjects as? [FIRDataSnapshot] else {
                 completeHandler(nil)
                 return

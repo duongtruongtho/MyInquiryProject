@@ -8,10 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		25C3F681293FB6A9FD82E387 /* Pods_MyInquiryProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09ED74B8A5FBD3F4AE5E6080 /* Pods_MyInquiryProject.framework */; };
+		640700441E041876007E9E6F /* TopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640700431E041876007E9E6F /* TopViewController.swift */; };
 		647017D01DFD71410004FCE7 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647017CF1DFD71410004FCE7 /* LoginViewModel.swift */; };
 		647017D51DFD93DD0004FCE7 /* SignUpViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 647017D41DFD93DD0004FCE7 /* SignUpViewController.storyboard */; };
 		647017D71DFD992C0004FCE7 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647017D61DFD992C0004FCE7 /* SignUpViewController.swift */; };
 		647017D91DFD99470004FCE7 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647017D81DFD99470004FCE7 /* SignUpViewModel.swift */; };
+		647CA9CD1E045ECC001CC78E /* NewsFeedViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647CA9CC1E045ECC001CC78E /* NewsFeedViewCell.swift */; };
+		647CA9D21E0461DB001CC78E /* TopViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647CA9D11E0461DB001CC78E /* TopViewModel.swift */; };
+		647CA9D51E04624F001CC78E /* NewsFeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647CA9D41E04624F001CC78E /* NewsFeedViewModel.swift */; };
+		647CA9D81E04725D001CC78E /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647CA9D71E04725D001CC78E /* UIImage+Extension.swift */; };
 		649E079D1DFD3E7B00A29345 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649E079C1DFD3E7B00A29345 /* AppDelegate.swift */; };
 		649E079F1DFD3E7B00A29345 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649E079E1DFD3E7B00A29345 /* LoginViewController.swift */; };
 		649E07A21DFD3E7B00A29345 /* LoginViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 649E07A01DFD3E7B00A29345 /* LoginViewController.storyboard */; };
@@ -27,10 +32,15 @@
 /* Begin PBXFileReference section */
 		04EC274A1E9968B3F744775A /* Pods-MyInquiryProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyInquiryProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyInquiryProject/Pods-MyInquiryProject.release.xcconfig"; sourceTree = "<group>"; };
 		09ED74B8A5FBD3F4AE5E6080 /* Pods_MyInquiryProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyInquiryProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		640700431E041876007E9E6F /* TopViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TopViewController.swift; path = TopView/TopViewController.swift; sourceTree = "<group>"; };
 		647017CF1DFD71410004FCE7 /* LoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		647017D41DFD93DD0004FCE7 /* SignUpViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = SignUpViewController.storyboard; path = SignUp/SignUpViewController.storyboard; sourceTree = "<group>"; };
 		647017D61DFD992C0004FCE7 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignUpViewController.swift; path = SignUp/SignUpViewController.swift; sourceTree = "<group>"; };
 		647017D81DFD99470004FCE7 /* SignUpViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignUpViewModel.swift; path = SignUp/SignUpViewModel.swift; sourceTree = "<group>"; };
+		647CA9CC1E045ECC001CC78E /* NewsFeedViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NewsFeedViewCell.swift; path = TopView/NewsFeedViewCell.swift; sourceTree = "<group>"; };
+		647CA9D11E0461DB001CC78E /* TopViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TopViewModel.swift; path = TopView/TopViewModel.swift; sourceTree = "<group>"; };
+		647CA9D41E04624F001CC78E /* NewsFeedViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NewsFeedViewModel.swift; path = TopView/NewsFeedViewModel.swift; sourceTree = "<group>"; };
+		647CA9D71E04725D001CC78E /* UIImage+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIImage+Extension.swift"; path = "Extension/UIImage+Extension.swift"; sourceTree = "<group>"; };
 		649E07991DFD3E7B00A29345 /* MyInquiryProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyInquiryProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		649E079C1DFD3E7B00A29345 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		649E079E1DFD3E7B00A29345 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -64,6 +74,16 @@
 				09ED74B8A5FBD3F4AE5E6080 /* Pods_MyInquiryProject.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		640700421E041830007E9E6F /* TopView */ = {
+			isa = PBXGroup;
+			children = (
+				647CA9CF1E0461A4001CC78E /* ViewModel */,
+				647CA9CE1E04619D001CC78E /* View */,
+				647CA9CB1E045E8F001CC78E /* Cell */,
+			);
+			name = TopView;
 			sourceTree = "<group>";
 		};
 		647017CC1DFD70AC0004FCE7 /* Login */ = {
@@ -118,6 +138,55 @@
 			name = ViewModel;
 			sourceTree = "<group>";
 		};
+		647CA9CB1E045E8F001CC78E /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				647CA9D31E046203001CC78E /* ViewModel */,
+				647CA9D01E0461B7001CC78E /* View */,
+			);
+			name = Cell;
+			sourceTree = "<group>";
+		};
+		647CA9CE1E04619D001CC78E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				640700431E041876007E9E6F /* TopViewController.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		647CA9CF1E0461A4001CC78E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				647CA9D11E0461DB001CC78E /* TopViewModel.swift */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		647CA9D01E0461B7001CC78E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				647CA9CC1E045ECC001CC78E /* NewsFeedViewCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		647CA9D31E046203001CC78E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				647CA9D41E04624F001CC78E /* NewsFeedViewModel.swift */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		647CA9D61E04722D001CC78E /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				647CA9D71E04725D001CC78E /* UIImage+Extension.swift */,
+			);
+			name = Extension;
+			sourceTree = "<group>";
+		};
 		649E07901DFD3E7A00A29345 = {
 			isa = PBXGroup;
 			children = (
@@ -139,6 +208,8 @@
 		649E079B1DFD3E7B00A29345 /* MyInquiryProject */ = {
 			isa = PBXGroup;
 			children = (
+				647CA9D61E04722D001CC78E /* Extension */,
+				640700421E041830007E9E6F /* TopView */,
 				7A86F4F01E0382FB00E74943 /* Util */,
 				7AC2B94D1DFE5AC100C27BF6 /* MainView */,
 				647017D11DFD939B0004FCE7 /* SignUp */,
@@ -305,12 +376,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				647CA9D81E04725D001CC78E /* UIImage+Extension.swift in Sources */,
 				649E079F1DFD3E7B00A29345 /* LoginViewController.swift in Sources */,
 				7A86F4F41E03900E00E74943 /* FirebaseDatabaseUtil.swift in Sources */,
 				7A86F4F21E03834B00E74943 /* GMINUtil.swift in Sources */,
+				647CA9CD1E045ECC001CC78E /* NewsFeedViewCell.swift in Sources */,
 				649E079D1DFD3E7B00A29345 /* AppDelegate.swift in Sources */,
+				647CA9D21E0461DB001CC78E /* TopViewModel.swift in Sources */,
 				647017D91DFD99470004FCE7 /* SignUpViewModel.swift in Sources */,
+				647CA9D51E04624F001CC78E /* NewsFeedViewModel.swift in Sources */,
 				7AC2B9531DFE761500C27BF6 /* MainViewController.swift in Sources */,
+				640700441E041876007E9E6F /* TopViewController.swift in Sources */,
 				647017D71DFD992C0004FCE7 /* SignUpViewController.swift in Sources */,
 				647017D01DFD71410004FCE7 /* LoginViewModel.swift in Sources */,
 			);

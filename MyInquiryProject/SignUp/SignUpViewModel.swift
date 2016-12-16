@@ -100,7 +100,7 @@ class SignUpViewModel: NSObject {
         }
         
         // register user in realtime database
-        self.ref.child("users").child(username).observe(FIRDataEventType.value, with: { [weak self] (snapshot: FIRDataSnapshot) in
+        self.ref.child("users").child(username).observeSingleEvent(of: FIRDataEventType.value, with: { [weak self] (snapshot: FIRDataSnapshot) in
             guard let selfInstance = self else { return }
             if snapshot.exists() {
                 selfInstance.dialogContent = "Username had register already !"
